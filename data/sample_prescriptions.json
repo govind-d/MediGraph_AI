@@ -1,0 +1,52 @@
+[
+  {
+    "label": "Simple antibiotic course (single medication)",
+    "text": "Amoxicillin 500mg, take one capsule three times daily for five days.",
+    "demonstrates": "Baseline parsing: name, strength, dose, frequency, duration, inferred oral route."
+  },
+  {
+    "label": "High-concern interaction (warfarin + NSAID)",
+    "text": "Warfarin 5 mg once daily at night.\nIbuprofen 400 mg tablet, take one tablet three times a day after food for 7 days.",
+    "demonstrates": "High-concern bleeding interaction with source citation, plus a food instruction."
+  },
+  {
+    "label": "Abbreviated sig notation",
+    "text": "Tab Metformin 500mg PO BD x 30 days\nTab Atorvastatin 10mg PO HS\nTab Amlodipine 5mg OD",
+    "demonstrates": "Latin/clinical abbreviations (PO, BD, HS, OD) and 'x 30 days' duration notation."
+  },
+  {
+    "label": "Incomplete prescription (missing fields)",
+    "text": "Levothyroxine - take as directed\nOmeprazole 20mg",
+    "demonstrates": "Fields flagged for verification instead of being guessed, plus an absorption-timing interaction."
+  },
+  {
+    "label": "Duplicate therapy and brand names",
+    "text": "Brufen 400mg twice daily for 3 days\nNaproxen 250mg, 1 tablet twice daily as needed for pain",
+    "demonstrates": "Brand-name normalisation (Brufen to ibuprofen) and duplicate NSAID therapy detection."
+  },
+  {
+    "label": "Polypharmacy with allergy and condition risk",
+    "text": "1. Amoxicillin 500 mg capsule, one capsule three times a day for 7 days\n2. Prednisolone 10mg tablet once daily in the morning for 5 days\n3. Salbutamol inhaler, 2 puffs as needed, up to 4 times a day\n4. Propranolol 40mg twice daily",
+    "demonstrates": "Penicillin-allergy warning, asthma/beta-blocker caution, steroid-diabetes caution, inhaler route and PRN dosing."
+  },
+  {
+    "label": "Serotonin and sedation risk",
+    "text": "Sertraline 50mg once daily in the morning\nTramadol 50mg every 6 hours as needed for pain, maximum 4 doses per day\nAlprazolam 0.25mg at bedtime",
+    "demonstrates": "Serotonin-syndrome risk and the opioid/benzodiazepine boxed warning."
+  },
+  {
+    "label": "Hyperkalaemia and renal risk cluster",
+    "text": "Lisinopril 10 mg once daily\nSpironolactone 25 mg once daily\nPotassium chloride 600 mg twice daily\nIbuprofen 400mg three times daily when required",
+    "demonstrates": "Multiple overlapping potassium-raising interactions plus NSAID renal caution."
+  },
+  {
+    "label": "Statin and macrolide (contraindicated pairing)",
+    "text": "Simvastatin 40mg at night\nClarithromycin 500mg twice daily for 7 days",
+    "demonstrates": "High-concern myopathy risk requiring a prescriber decision."
+  },
+  {
+    "label": "No interaction found in the checked sources",
+    "text": "Cetirizine 10mg once daily at night for 10 days\nAcetaminophen 500mg, 1 tablet every 6 hours as needed for fever",
+    "demonstrates": "The 'no known interaction found' category and how its limitations are stated."
+  }
+]

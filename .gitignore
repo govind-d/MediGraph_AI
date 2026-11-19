@@ -1,0 +1,14 @@
+.env
+*.db
+*.log
+exports/*
+!exports/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.streamlit/secrets.toml
+.claude/
+.pytest_cache/
+scan_b64.tmp

@@ -1,0 +1,36 @@
+# --- Required -------------------------------------------------------------
+streamlit>=1.36            # web UI
+# SQLite, hashing, HTTP and the TF-IDF retriever use the Python standard library.
+
+# --- Recommended (graph + PDF + charts) -----------------------------------
+networkx>=3.2              # knowledge-graph backend and layout (falls back to a built-in graph)
+reportlab>=4.0             # PDF safety report (falls back to print-ready HTML)
+plotly>=5.20               # interactive graph visualisation (falls back to inline SVG)
+
+# --- Recommended: OCR intake (scan a prescription) ------------------------
+pillow>=10.0               # image preprocessing (already a Streamlit dependency)
+pytesseract>=0.3.10        # needs the Tesseract binary: winget install UB-Mannheim.TesseractOCR
+pypdf>=4.0                 # reads the text layer of digital PDFs
+# easyocr>=1.7             # optional alternative local OCR engine (large download)
+
+# --- Optional: NLP assist --------------------------------------------------
+# spacy>=3.7
+# then: python -m spacy download en_core_web_sm
+
+# --- Optional: Neo4j knowledge-graph persistence ---------------------------
+# neo4j>=5.19
+
+# --- Optional: dense retrieval for the RAG chatbot -------------------------
+# sentence-transformers>=2.7
+# faiss-cpu>=1.8
+# (or) chromadb>=0.5
+# LangChain/LlamaIndex can be layered on top of backend/rag_engine.py:
+# langchain>=0.2
+# llama-index>=0.10
+
+# --- Optional: REST API layer (api/main.py) ------------------------------
+# fastapi[standard]>=0.115
+# uvicorn>=0.30
+
+# --- Development -----------------------------------------------------------
+pytest>=8.0

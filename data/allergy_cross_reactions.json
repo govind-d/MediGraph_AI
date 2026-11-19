@@ -1,0 +1,100 @@
+{
+  "classes": {
+    "penicillin": {
+      "label": "Penicillin class",
+      "members": ["amoxicillin", "amoxicillin/clavulanate", "ampicillin", "penicillin", "penicillin v", "benzylpenicillin", "flucloxacillin", "piperacillin"],
+      "cross_reactive_classes": ["cephalosporin"],
+      "note": "A documented penicillin allergy is a direct contraindication to other penicillins. Cross-reactivity with cephalosporins exists but is lower than once believed; the decision belongs to the prescriber.",
+      "source_name": "FDA penicillin class labelling (Contraindications/Warnings)",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "cephalosporin": {
+      "label": "Cephalosporin class",
+      "members": ["cefalexin", "cephalexin", "cefuroxime", "ceftriaxone", "cefixime", "cefpodoxime"],
+      "cross_reactive_classes": ["penicillin"],
+      "note": "Partial cross-reactivity with penicillins, mainly where side chains are similar.",
+      "source_name": "FDA cephalosporin class labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "sulfonamide": {
+      "label": "Sulfonamide antibiotics",
+      "members": ["trimethoprim/sulfamethoxazole", "sulfamethoxazole", "sulfadiazine"],
+      "cross_reactive_classes": [],
+      "note": "Sulfonamide antibiotic allergy does not reliably predict reactions to non-antibiotic sulfonamides such as furosemide or hydrochlorothiazide, but it should still be discussed with the prescriber.",
+      "source_name": "FDA sulfonamide labelling (Warnings)",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "nsaid": {
+      "label": "NSAIDs and aspirin",
+      "members": ["ibuprofen", "naproxen", "diclofenac", "aspirin", "ketorolac", "indomethacin", "celecoxib"],
+      "cross_reactive_classes": [],
+      "note": "People who react to one NSAID often react to others, because the reaction is usually related to COX-1 inhibition rather than to a single molecule.",
+      "source_name": "FDA NSAID class labelling (Contraindications)",
+      "source_url": "https://www.fda.gov/drugs/drug-safety-and-availability"
+    },
+    "macrolide": {
+      "label": "Macrolide antibiotics",
+      "members": ["azithromycin", "clarithromycin", "erythromycin"],
+      "cross_reactive_classes": [],
+      "note": "Reactions to one macrolide may extend to others in the class.",
+      "source_name": "FDA macrolide class labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "fluoroquinolone": {
+      "label": "Fluoroquinolone antibiotics",
+      "members": ["ciprofloxacin", "levofloxacin", "moxifloxacin", "ofloxacin"],
+      "cross_reactive_classes": [],
+      "note": "Class-wide caution after a reaction to any fluoroquinolone.",
+      "source_name": "FDA fluoroquinolone labelling (Warnings)",
+      "source_url": "https://www.fda.gov/drugs/drug-safety-and-availability"
+    },
+    "tetracycline": {
+      "label": "Tetracycline antibiotics",
+      "members": ["doxycycline", "tetracycline", "minocycline"],
+      "cross_reactive_classes": [],
+      "note": "Class-wide caution after a reaction to any tetracycline.",
+      "source_name": "FDA tetracycline class labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "opioid": {
+      "label": "Opioid analgesics",
+      "members": ["morphine", "codeine", "tramadol", "oxycodone", "fentanyl"],
+      "cross_reactive_classes": [],
+      "note": "Many reported opioid 'allergies' are predictable side effects (nausea, itching) rather than true allergy, but true allergy does occur. The distinction matters and should be made by a clinician.",
+      "source_name": "FDA opioid analgesic labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "statin": {
+      "label": "Statins",
+      "members": ["atorvastatin", "simvastatin", "rosuvastatin", "pravastatin"],
+      "cross_reactive_classes": [],
+      "note": "Muscle-related intolerance to one statin does not always extend to others; switching is a prescriber decision.",
+      "source_name": "FDA statin class labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "ssri": {
+      "label": "SSRI antidepressants",
+      "members": ["sertraline", "escitalopram", "fluoxetine", "citalopram", "paroxetine"],
+      "cross_reactive_classes": [],
+      "note": "True allergy is uncommon; previous reactions should still be recorded.",
+      "source_name": "FDA SSRI class labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "benzodiazepine": {
+      "label": "Benzodiazepines",
+      "members": ["diazepam", "alprazolam", "lorazepam", "clonazepam"],
+      "cross_reactive_classes": [],
+      "note": "Class-wide caution after a documented reaction.",
+      "source_name": "FDA benzodiazepine class labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    },
+    "azole": {
+      "label": "Azole antifungals",
+      "members": ["fluconazole", "itraconazole", "ketoconazole", "voriconazole"],
+      "cross_reactive_classes": [],
+      "note": "Class-wide caution after a documented reaction.",
+      "source_name": "FDA azole antifungal labelling",
+      "source_url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
+    }
+  }
+}
